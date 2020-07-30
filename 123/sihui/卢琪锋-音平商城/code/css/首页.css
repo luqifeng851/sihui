@@ -1,0 +1,565 @@
+.fullSlide .middle {
+    width: 750px;
+    height: 100%;
+    margin-left: 209px;
+    float: left;
+}
+
+
+.fullSlide .middle>li {
+    display: none;
+
+}
+
+.fullSlide .middle>li img {
+    width: 820px;
+}
+
+.fullSlide .middle .item {
+    display: block;
+}
+
+.fullSlide .show-case {
+    float: right;
+    width: 220px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.fullSlide .show-case img {
+    width: 220px;
+    height: 450px;
+}
+
+#main-bg {
+    width: 100%;
+    height: 5100px;
+    background-color: #f2f2f2;
+}
+
+#main-bg .pro_img {
+    width: 1250px;
+    margin: 10px auto;
+    height: 150px;
+}
+
+.pro_img li {
+    float: left;
+    margin: 5px;
+    width: 19%;
+}
+
+#main-bg>h2 {
+    width: 1250px;
+    margin: 10px auto;
+    padding-left: 60px;
+    font-size: 26px;
+    margin-top: 40px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#main-bg>h2>span {
+    float: right;
+    font-size: 14px;
+}
+
+#main-bg .GuessYouLike {
+    width: 1250px;
+    height: 270px;
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#main-bg .GuessYouLike ul li {
+    width: 240px;
+    height: 270px;
+    float: left;
+    text-align: center;
+    margin: 5px;
+    background-color: #fff;
+    padding: 5px;
+}
+
+#main-bg .GuessYouLike ul li .item_name,
+.item_price {
+    text-align: left;
+    margin-top: 5px;
+}
+
+.GuessYouLike ul li .item_price {
+    color: red;
+}
+
+.hotBuy {
+    width: 1250px;
+    height: 36px;
+    line-height: 36px;
+    margin-top: 20px;
+    margin: 20px auto;
+    font-size: 26px;
+    font-weight: 900;
+    padding-left: 50px;
+}
+
+.hotBuy span {
+    float: left;
+}
+
+.hotBuy .more {
+    float: right;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.hotBuy .more span {
+    margin-right: 5px;
+}
+
+.MainBlock {
+    width: 1250px;
+    margin: 5px auto;
+    height: 400px;
+}
+
+.MainBlock .left,
+.right,
+.middle {
+    float: left;
+}
+
+.MainBlock .left a {
+    display: block;
+    width: 400px;
+    height: 195px;
+    margin: 5px;
+}
+
+.MainBlock .middle {
+    width: 580px;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.MainBlock .middle .Block5 {
+    width: 600px;
+    height: 195px;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+.MainBlock .middle .Block10 {
+    width: 600px;
+    height: 190px;
+    position: relative;
+    /* background-color: #fff; */
+}
+
+.MainBlock .middle .Block10 .Block101 {
+    display: inline-block;
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.MainBlock .middle .Block10 .Block102 {
+    display: inline-block;
+    position: relative;
+    width: 230px;
+    height: 190px;
+    background-color: #fff;
+}
+
+.MainBlock .middle .cu_icon {
+    width: 28px;
+    height: 31.11px;
+    /* background: url(../images/cu-1.0.1.png) no-repeat center center; */
+    background-size: cover;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    font-size: 14px;
+}
+
+.MainBlock .middle .item_a {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+}
+
+.MainBlock .middle .item_a .text-overflow {
+    font-size: 12px;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.MainBlock .middle .item_a .f-18 {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.MainBlock .middle .item_a .item_price {
+    font-size: 16px;
+    color: red;
+}
+
+.MainBlock .middle img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.MainBlock .middle .Block102 img {
+    position: absolute;
+    top: 65px;
+    right: 0;
+}
+
+.MainBlock .right {
+    width: 210px;
+    height: 100%;
+    margin-left: 32px;
+}
+
+.MainBlock .right .Block201 {
+    width: 210px;
+    height: 195px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    position: relative;
+}
+
+.MainBlock .right .Block202 {
+    width: 210px;
+    height: 195px;
+    background-color: #fff;
+    position: relative;
+}
+
+.MainBlock .right .cu_icon {
+    width: 28px;
+    height: 31.11px;
+    /* background: url(../images/cu-1.0.1.png) no-repeat center center; */
+    background-size: cover;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    font-size: 14px;
+}
+
+.MainBlock .right .item_a {
+    position: absolute;
+    top: 15px;
+    left: 12px;
+}
+
+.MainBlock .right .item_a .text-overflow {
+    font-size: 12px;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.MainBlock .right .item_a .f-18 {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.MainBlock .right .item_a .item_price {
+    font-size: 16px;
+    color: red;
+}
+
+
+.MainBlock .right img {
+    position: absolute;
+    top: 65px;
+    right: 0;
+}
+
+.floor {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.floor .box {
+    height: 540px;
+}
+
+.floor .box h1 {
+    width: 1250px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 26px;
+    margin: 20px auto;
+}
+
+.floor .box h1 span {
+    float: left;
+    color: orange;
+}
+
+.floor .box h1 ul {
+    float: right;
+}
+
+.floor .box h1 ul li {
+    float: left;
+    font-size: 12px;
+}
+
+.floor .box h1 ul li a:hover {
+    color: orange;
+}
+
+.box .box-list .Bigimg {
+    float: left;
+    width: 400px;
+    height: 400px;
+}
+
+.box .box-list .rightSize {
+    float: right;
+    /* background-color: #163; */
+    height: 400px;
+    width: 830px;
+    margin-left: 10px;
+}
+
+.box .box-list .rightSize .content {
+    width: 210px;
+    height: 196px;
+    margin: 5px;
+    float: left;
+    background-color: #fff;
+    position: relative;
+    padding: 15px 0 0 15px;
+}
+
+.box .box-list .rightSize .item {
+    width: 380px;
+    background-color: #f1fff0;
+}
+
+.box .box-list .rightSize .content img {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.box .box-list .rightSize .content .commit {
+    font-size: 12px;
+    color: #ccc;
+}
+
+.box .box-list .rightSize .content .name {
+    font-size: 18px;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.box .box-list .rightSize .content .price {
+    font-size: 16px;
+    color: red;
+}
+
+.floor .dowmPic {
+    background-color: #fff;
+    height: 70px;
+    margin-top: 25px;
+}
+
+.floor .dowmPic ul li {
+    width: 125px;
+    height: 70px;
+    border-bottom: 2px solid red;
+    float: left;
+    line-height: 70px;
+    text-align: center;
+}
+
+#newsShaidan {
+    width: 1250px;
+    height: 400px;
+    margin: 15px auto;
+}
+
+#newsShaidan h2 {
+    font-size: 26px;
+    padding-left: 15px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#newsShaidan ul li {
+    float: left;
+    width: 240px;
+    height: 337px;
+    margin: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#newsShaidan ul li>img {
+    width: 232px;
+    height: 147px;
+}
+
+#newsShaidan ul li .tit_b {
+    font-size: 12px;
+    margin: 15px;
+    text-align: left;
+    height: 45px;
+}
+
+#newsShaidan ul li .newsShaidan-min-img {
+    width: 206px;
+    height: 67px;
+    position: relative;
+    background-color: #e3e3e3;
+    margin-left: 15px;
+}
+
+#newsShaidan ul li .newsShaidan-min-img div {
+    position: absolute;
+    top: 15px;
+    left: 80px;
+    font-size: 12px;
+    width: 120px;
+    height: 33px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#newsShaidan ul li .newsShaidan-min-img img {
+    width: 62px;
+    height: 62px;
+    padding: 3px 0 0 3px;
+    float: left;
+}
+
+#newsShaidan ul li .commit {
+    height: 37px;
+    margin-top: 10px;
+    border-top: 1px solid #ccc;
+    /* line-height: 37px; */
+    color: #cccc;
+    background-color: #fff;
+    font-size: 12px;
+    padding: 8px;
+}
+
+#newsZixun {
+    width: 1250px;
+    height: 300px;
+    margin: 10px auto;
+}
+
+#newsZixun h2 {
+    font-size: 26px;
+    padding-left: 15px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#newsZixun ul li {
+    width: 232px;
+    height: 270px;
+    background-color: #fff;
+    margin: 9px;
+}
+
+#newsZixun ul li img {
+    width: 207px;
+    height: 145px;
+    margin-left: 12px;
+}
+
+#newsZixun ul li .til_a {
+    margin: 12px;
+    font-size: 14px;
+    height: 65px;
+    line-height: 30px;
+}
+
+#newsZixun ul li .commit_A {
+    height: 36px;
+    line-height: 36px;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+    color: #ccc;
+    padding: 0 12px 0;
+}
+
+#onlineKeFu {
+    position: fixed;
+    bottom: 0;
+    right: 52px;
+}
+
+#onlineKeFu img {
+    width: 94px;
+    height: 113px;
+}
+
+.right_nav {
+    width: 30px;
+    height: 100%;
+    background-color: #333333;
+    position: fixed;
+    right: 0;
+    top: 0;
+    text-align: center;
+}
+
+.right_nav div {
+    color: orange;
+    /* line-height: 50px; */
+    height: 50px;
+    /* font-size: 14px; */
+    margin-top: 220px;
+}
+
+#nav_panel {
+    width: 40px;
+    height: 360px;
+    position: fixed;
+    top: 50%;
+    left: 80px;
+    margin-top: -160px;
+    background-color: #333333;
+    display: none;
+}
+
+#nav_panel li {
+    background: #666;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    height: 40px;
+    padding: 5px 5px 0 5px;
+    line-height: 15px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+#nav_panel .item111 {
+    background-color: #ff6600;
+}

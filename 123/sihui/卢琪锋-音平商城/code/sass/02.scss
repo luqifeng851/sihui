@@ -1,0 +1,155 @@
+body {
+    background-color: #fff;
+
+    .container {
+        height: 100px;
+        width: 1200px;
+        margin: 20px auto;
+        position: relative;
+
+        .login-logo {
+            float: left;
+            width: 200px;
+        }
+
+
+        .login-items {
+            position: absolute;
+            top: 15px;
+            right: 10px;
+
+            ul li {
+                float: left;
+            }
+        }
+    }
+
+    .layout-a {
+        height: 580px;
+        width: 100%;
+        background-color: #0094e2;
+        padding-top: 30px;
+
+        h1 {
+            width: 380px;
+            height: 50px;
+            font-size: 22px;
+            font-weight: 800;
+            margin: 0px auto;
+            text-align: center;
+            color: #fff;
+        }
+
+        .regbox {
+            width: 420px;
+            height: 490px;
+            margin: 0px auto;
+            background-color: #fff;
+            padding-top: 10px;
+
+            div {
+                width: 420px;
+                height: 65px;
+                margin-bottom: 15px;
+                position: relative;
+            }
+
+            input {
+                width: 310px;
+                height: 40px;
+                background-color: #fff;
+                border: 1px solid #ccd;
+            }
+
+            label {
+                display: inline-block;
+                width: 50px;
+                height: 70px;
+                text-align: center;
+                line-height: 70px;
+                color: #CCc;
+                font-size: 14px;
+            }
+
+            .Verification {
+                position: relative;
+                height: 100px;
+                margin: 0;
+
+                #Verification {
+                    width: 220px;
+                    height: 50px;
+                    position: absolute;
+                    top: 15px;
+                    left: 55px;
+                }
+
+                #captcha1 {
+                    float: right;
+                }
+            }
+
+            .submit {
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+
+                #submit {
+                    background-color: #e0e0e0;
+                    color: #fff;
+                    font-size: 18px;
+                }
+            }
+
+            .login {
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: #ccd;
+            }
+
+
+
+            .item {
+                p {
+                    color: red;
+                    height: 30px;
+                    line-height: 30px;
+                    left: 55px;
+                    position: absolute;
+                    top: 60px;
+                }
+
+                input {
+                    border: 1px solid red;
+                }
+            }
+
+        }
+    }
+
+    .nl-footer {
+        width: 460px;
+        position: absolute;
+        top: 790px;
+        left: 50%;
+        text-align: center;
+        height: 120px;
+        color: #ccc;
+        font-size: 12px;
+        margin-left: -230px;
+
+        .nl-f-nav {
+            margin-bottom: 10px;
+
+            a {
+                font-size: 14px;
+                color: #ccc;
+            }
+        }
+
+        .nl-f-copyright .nl_f_text {
+            margin-bottom: 10px;
+        }
+    }
+}

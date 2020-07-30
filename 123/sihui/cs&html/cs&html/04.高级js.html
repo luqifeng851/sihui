@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>面试题集--高级JS篇</title>
+</head>
+
+<body>
+    <!-- 
+    1、JQuery一个对象可以同时绑定多个事件，这是如何实现的？
+        jQuery可以给一个对象同时绑定多个事件，低层实现方式是使用addEventListner或attachEvent兼容不同的浏览器实现事件的绑定，这样可以给同一个对象注册多个事件。
+    2、知道什么是webkit么? 知道怎么用浏览器的各种工具来调试和debug代码么?
+        Webkit是浏览器引擎，包括html渲染和js解析功能，手机浏览器的主流内核，与之相对应的引擎有Gecko（Mozilla Firefox 等使用）和Trident（也称MSHTML，IE 使用）。
+        对于浏览器的调试工具要熟练使用，主要是页面结构分析，后台请求信息查看，js调试工具使用，熟练使用这些工具可以快速提高解决问题的效率
+    3、如何测试前端代码? 知道BDD, TDD, Unit Test么? 知道怎么测试你的前端工程么(mocha, sinon, jasmin, qUnit…)?
+        了解BDD行为驱动开发与TDD测试驱动开发已经单元测试相关概念，
+    4、前端templating(Mustache, underscore, handlebars)是干嘛的, 怎么用?
+        Web 模板引擎是为了使用户界面与业务数据（内容）分离而产生的，
+        Mustache 是一个 logic-less （轻逻辑）模板解析引擎，它的优势在于可以应用在 Javascript、PHP、Python、Perl 等多种编程语言中。
+        Underscore封装了常用的JavaScript对象操作方法，用于提高开发效率。
+        Handlebars 是 JavaScript 一个语义模板库，通过对view和data的分离来快速构建Web模板。
+    5、简述一下 Handlebars 的基本用法？
+        没有用过的话说出它是干什么的即可
+    6、简述一下 Handlerbars 的对模板的基本处理流程， 如何编译的？如何缓存的？
+
+    7、用js实现千位分隔符?
+
+    8、检测浏览器版本版本有哪些方式？
+        IE与标准浏览器判断，IE不同版本的判断，userAgent var ie = /@cc_on !@/false;
+    9、我们给一个dom同时绑定两个点击事件，一个用捕获，一个用冒泡，你来说下会执行几次事件，然后会先执行冒泡还是捕获
+
+    10、（设计题）想实现一个对页面某个节点的拖曳？如何做？（使用原生JS）
+        1.给需要拖拽的节点绑定mousedown, mousemove, mouseup事件
+        2.mousedown事件触发后，开始拖拽
+        3.mousemove时，需要通过event.clientX和clientY获取拖拽位置，并实时更新位置
+        4.mouseup时，拖拽结束
+        5.需要注意浏览器边界的情况
+    11、eval是做什么的？
+        它的功能是把对应的字符串解析成JS代码并运行；应该避免使用eval，不安全，非常耗性能（2个步骤，一次解析成js语句，一次执行）
+    12、关于事件，IE与火狐的事件机制有什么区别？ 如何阻止冒泡？
+        [1].在IE中,事件对象是作为一个全局变量来保存和维护的.所有的浏览器事件,不管是用户触发的，还是其他事件,都会更新window.event对象.所以在代码中，只要调用window.event就可以获取事件对象， 再event.srcElement就可以取得触发事件的元素进行进一步处理.
+        [2].在FireFox中，事件对象却不是全局对象，一般情况下，是现场发生，现场使用，FireFox把事件对象自动传给事件处理程序.
+        关于事件的兼容性处理要熟练掌握，事件对象具体哪些属性存在兼容性问题，IE与标准事件模型事件冒泡与事件捕获的支持要理解
+    13、什么是闭包（closure），为什么要用它？
+        简单的理解是函数的嵌套形成闭包，闭包包括函数本身已经它的外部作用域，使用闭包可以形成独立的空间，延长变量的生命周期，报存中间状态值
+    14、javascript 代码中的"use strict";是什么意思 ? 使用它区别是什么？
+        意思是使用严格模式，使用严格模式，一些不规范的语法将不再支持
+    15、如何判断一个对象是否属于某个类？
+        Instanceof constructor
+    16、new操作符具体干了什么呢?
+        1、创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。
+        2、属性和方法被加入到 this 引用的对象中。
+        3、新创建的对象由 this 所引用，并且最后隐式的返回 this 。
+    17、用原生JavaScript的实现过什么功能吗？
+
+    18、Javascript中，有一个函数，执行时对象查找时，永远不会去查找原型，这个函数是？
+        HasOwnProperty
+    19、对JSON的了解？
+        轻量级数据交互格式，可以形成复杂的嵌套格式，解析非常方便
+    20、js延迟加载的方式有哪些？
+        方案一：
+        Object.hasOwnProperty( ) 检查属性是否被继承
+        Object.isPrototypeOf( ) 一个对象是否是另一个对象的原型
+        Object.propertyIsEnumerable( ) 是否可以通过for/in循环看到属性
+        Object.toLocaleString( ) 返回对象的本地字符串表示
+        Object.toString( ) 定义一个对象的字符串表示
+        Object.valueOf( ) 指定对象的原始值
+    21、JS 怎么实现一个类。怎么实例化这个类
+        严格来讲js中并没有类的概念，不过js中的函数可以作为构造函数来使用，通过new来实例化，其实函数本身也是一个对象。
+    22、JavaScript中的作用域与变量声明提升？
+        理解JavaScript的预解析机制，js的运行主要分两个阶段：js的预解析和运行，预解析阶段所有的变量声明和函数定义都会提前，但是变量的赋值不会提前
+    23、如何编写高性能的Javascript？
+        使用 DocumentFragment 优化多次 append通过模板元素 clone ，替代 createElement
+        使用一次 innerHTML 赋值代替构建 dom 元素
+        使用 firstChild 和 nextSibling 代替 childNodes 遍历 dom 元素
+        使用 Array 做为 StringBuffer ，代替字符串拼接的操作，将循环控制量保存到局部变量顺序无关的遍历时，用 while 替代 for将条件分支，按可能性顺序从高到低排列在同一条件子的多（ >2 ）条件分支时，使用 switch 优于 if使用三目运算符替代条件分支需要不断执行的时候，优先考虑使用 setInterval
+    24、那些操作会造成内存泄漏？
+        闭包，循环
+    25、javascript对象的几种创建方式？
+        工厂模式
+        构造函数模式
+        原型模式
+        混合构造函数和原型模式
+        动态原型模式
+        寄生构造函数模式
+        稳妥构造函数模式
+    26、javascript继承的 6 种方法？
+        原型链继承
+        借用构造函数继承
+        组合继承(原型+借用构造)
+        原型式继承
+        寄生式继承
+        寄生组合式继承
+    27、JavaScript 原型，原型链 ? 有什么特点？
+        原型对象也是普通的对象，是对象一个自带隐式的 proto 属性，原型也有可能有自己的原型，如果一个原型对象的原型不为 null 的话，我们就称之为原型链
+        原型链是由一些用来继承和共享属性的对象组成的（有限的）对象链
+    28、事件、IE与火狐的事件机制有什么区别？ 如何阻止冒泡？
+        我们在网页中的某个操作（有的操作对应多个事件）。例如：当我们点击一个按钮就会产生一个事件。是可以被 JavaScript 侦测到的行为
+        事件处理机制：IE是事件冒泡、firefox同时支持两种事件模型，也就是：捕获型事件和冒泡型事件
+        ev.stopPropagation();
+    29、简述一下Sass、Less，且说明区别？
+        他们是动态的样式语言，是CSS预处理器,CSS上的一种抽象层。他们是一种特殊的语法/语言而编译成CSS。变量符不一样，less是@
+    30、简述一下你对web性能优化的方案？
+        1、尽量减少 HTTP 请求
+        2、使用浏览器缓存
+        3、使用压缩组件
+        4、图片、JS的预载入
+        5、将脚本放在底部
+        6、将样式文件放在页面顶部
+        7、使用外部的JS和CSS
+        8、精简代码
+    31、在JS中有哪些会被隐式转换为false
+        Undefined、null、关键字false、NaN、零、空字符串
+    32、定时器setInterval有一个有名函数fn1，setInterval（fn1,500）与setInterval（fn1(),500）有什么区别？
+        第一个是重复执行每500毫秒执行一次，后面一个只执行一次。
+    33、外部JS文件出现中文字符，会出现什么问题，怎么解决？
+        会出现乱码，加charset=”GB2312”;
+    34、谈谈浏览器的内核，并且说一下什么是内核？
+        Trident (['traɪd(ə)nt])–IE，Gecko (['gekəʊ])–Firefox, Presto (['prestəʊ])–opera,webkit—谷歌和Safari
+        浏览器内核又可以分成两部分：渲染引擎和 JS 引擎。它负责取得网页的内容（HTML、XML、图像等等）、整理讯息（例如加入 CSS 等），以及计算网页的显示方式，然后会输出至显示器或打印机。JS 引擎则是解析 Javascript 语言，执行 javascript 语言来实现网页的动态效果。
+ -->
+</body>
+
+</html>

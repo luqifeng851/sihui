@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .cont{margin: 0 auto;position: relative;}
+        .box{float: left;padding: 4px;}
+        .imgbox{border: solid 1px black;padding: 4px;border-radius: 4px;}
+        .imgbox img{width: 200px;display: block;}
+    </style>
+    <script>
+        onload = function(){
+            var wf = new WaterF();
+            wf.init();
+        }
+        // onresize = function(){
+        //     var wf = new WaterF();
+        //     wf.init();
+        // }
+
+        // 瀑布流效果
+            // 1.第一行浮动（通过css实现）
+            // 2.如何区分第一行和后面的行
+                // 2.1先找到第一行最矮的
+                // 2.2后面的行的所有内容全部定位
+                // 2.3left设置最矮的元素的索引*任意一个元素的宽度
+                // 2.4top设置成上一行最矮的元素的高度
+                // 2.5修改最矮的那个元素，加上刚刚放置元素的高度
+                // 重置执行2.1向后的步骤
+
+
+        class WaterF{
+            constructor(){
+                this.clientW = document.documentElement.clientWidth;
+                this.abox = document.querySelectorAll(".box");
+                this.cont = document.querySelector(".cont");
+            }
+            init(){
+                // 根据屏幕的宽度 / 任意一个结构的宽度，得到一行最大能放几个
+                this.maxNum = parseInt(this.clientW / this.abox[0].offsetWidth);
+                // 根据一行能放置的个数 * 任意一张图片的宽度，得到了大框的真正的宽
+                this.cont.style.width = this.maxNum * this.abox[0].offsetWidth + "px";
+
+                // 完善布局之后，开始区分第一行和后面的行
+                this.firstLine();
+                this.otherLine();
+            }
+            firstLine(){
+                // 第一行，获取所有元素的高度放在一个数组中，准备获取最小值
+                this.heightArr = [];
+                for(var i=0;i<this.maxNum;i++){
+                    this.heightArr.push(this.abox[i].offsetHeight);
+                }
+            }
+            otherLine(){
+                // 需要拿到后面行的所有元素
+                for(var i=this.maxNum;i<this.abox.length;i++){
+                    // 在拿到后面行的元素的时候，获取第一个行的最小值和最小值所在的索引
+                    // var min = Math.min(...this.heightArr);
+                    var min = getMin(this.heightArr);
+                    var minIndex = this.heightArr.indexOf(min);
+                    // 设置定位
+                    this.abox[i].style.position = "absolute";
+                    // 根据最小值设置top
+                    this.abox[i].style.top = min + "px";
+                    // 根据最小值的索引设置left
+                    this.abox[i].style.left = minIndex * this.abox[0].offsetWidth + "px";
+                    // 修改最小值为，原来的数据+当前新放置元素的高度
+                    this.heightArr[minIndex] = this.heightArr[minIndex] + this.abox[i].offsetHeight;
+
+                    // 剩下的交给循环
+                }
+            }
+        }
+
+        function getMin(arr){
+            var myarr = [];
+            for(var j=0;j<arr.length;j++){
+                myarr.push(arr[j]);
+            }
+            return myarr.sort((a,b)=>a-b)[0];
+        }
+    </script>
+</head>
+<body>
+    <div class="cont">
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF2.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF1.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF3.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF4.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF5.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF6.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF7.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF8.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF9.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF10.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF2.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF1.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF3.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF4.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF5.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF6.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF7.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF8.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF9.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF10.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF2.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF1.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF3.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF4.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF5.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF6.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF7.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF8.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF9.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF10.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF2.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF1.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF3.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF4.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF5.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF6.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF7.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF8.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF9.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF10.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF2.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF1.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF3.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF4.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF5.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF6.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF7.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF8.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF9.jpg" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgbox">
+                <img src="./img/WaterF10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

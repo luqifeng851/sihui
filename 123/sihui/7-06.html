@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .list,.test{
+            display: none;
+        }
+        #control:checked ~ .list{
+            display: block;
+        }
+        .test{
+            width: 100px;
+            height: 100px;
+            background-color: #369;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <!-- <label for="control" id="label">水果列表</label> -->
+    </div>
+    <div class="box2">
+        <input type="checkbox" id="control">
+        <div class="list">
+            <li>苹果</li>
+            <li>西瓜</li>
+            <li>离子</li>
+            <li>葡萄</li>
+        </div>
+        <div class="test"></div>
+    </div>
+    
+
+</body>
+</html>

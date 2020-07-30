@@ -1,0 +1,190 @@
+#header .corent {
+    float: right;
+}
+
+article {
+    width: 1210px;
+    margin: 10px auto;
+}
+
+article h1 {
+    color: red;
+    height: 32px;
+    line-height: 32px;
+}
+
+article h1 .goodNum {
+    margin-left: 20px;
+}
+
+article .carGoods {
+    width: 1210px;
+    border: 1px solid #ccd;
+}
+
+article .carGoods .head {
+    height: 41px;
+    background-color: #fff;
+    line-height: 41px;
+    font-size: 13px;
+    color: #666666;
+}
+
+article .carGoods .head input {
+    width: 15px;
+    height: 15px;
+    margin: 0 15px;
+}
+
+article .carGoods .head .head2 {
+    margin-left: 20px;
+}
+
+article .carGoods .head .head3 {
+    margin-left: 480px;
+}
+
+article .carGoods .head .head4,
+.head5,
+.head6 {
+    margin-left: 80px;
+}
+
+article .clearfix {
+    width: 1210px;
+    height: 133px;
+    background-color: #fcfcfc;
+    border: 1px solid #ccc;
+    line-height: 133px;
+    position: relative;
+}
+
+article .clearfix div {
+    display: inline-block;
+}
+
+article .clearfix input {
+    width: 15px;
+    height: 15px;
+    margin: 0 15px;
+}
+
+article .clearfix img {
+    width: 80px;
+    height: 80px;
+}
+
+article .clearfix .customCart {
+    width: 410px;
+    height: 60px;
+    line-height: 23px;
+    font-size: 14px;
+    color: #333333;
+    margin-right: 85px;
+}
+
+article .clearfix .good_price {
+    width: 121px;
+    height: 133px;
+    line-height: 43px;
+}
+
+article .clearfix .good_price span {
+    display: block;
+    width: 50px;
+    height: 30px;
+    line-height: 60px;
+}
+
+article .clearfix .good_price del {
+    display: block;
+    width: 50px;
+    height: 40px;
+    line-height: 90px;
+    color: #ccc;
+}
+
+article .clearfix .num {
+    width: 40px;
+    height: 20px;
+    background-color: #fff;
+    margin: 0;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+article .clearfix button {
+    width: 20px;
+    height: 20px;
+}
+
+article .clearfix .allPrice {
+    margin: 0 43px;
+    color: orangered;
+    font-size: 16px;
+}
+
+article .clearfix .delete_good {
+    width: 80px;
+    height: 40px;
+    margin-left: 22px;
+}
+
+article .allMoney {
+    display: block;
+    width: 1210px;
+    height: 75px;
+    margin-top: 20px;
+    line-height: 75px;
+    /* background-color: #ac9; */
+    border: 1px solid #ccc;
+}
+
+article .allMoney input {
+    width: 15px;
+    height: 15px;
+    margin: 0 15px;
+}
+
+article .allMoney div {
+    display: inline-block;
+}
+
+article .allMoney span {
+    font-size: 12px;
+    color: #1a1a19;
+}
+
+article .allMoney span:nth-child(2) {
+    margin: 0 15px;
+}
+
+article .allMoney .good_number {
+    margin-left: 412px;
+}
+
+article .allMoney .good_number span {
+    font-size: 19px;
+    color: orangered;
+    margin-left: 10px;
+}
+
+article .allMoney .sumRealMoney {
+    margin-left: 100px;
+}
+
+article .allMoney .sumRealMoney span {
+    font-size: 19px;
+    color: orangered;
+    margin-left: 10px;
+}
+
+article .allMoney button {
+    width: 140px;
+    height: 74px;
+    font-size: 26px;
+    line-height: 76px;
+    color: #fff;
+    background-color: red;
+    margin-left: 100px;
+}

@@ -1,0 +1,132 @@
+body {
+  background-color: #fff;
+  position: relative;
+}
+
+body .container {
+  height: 100px;
+  width: 1200px;
+  margin: 10px auto;
+  position: relative;
+}
+
+body .container .login-logo {
+  float: left;
+  width: 200px;
+}
+
+body .container .login-msg {
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+}
+
+body .container .login-items {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+body .container .login-items ul li {
+  float: left;
+}
+
+body .nl-content {
+  height: 580px;
+  width: 100%;
+  background: url("https://img.ingping.com/images/gg_images/201705/201705031858210830908.jpg");
+  position: relative;
+}
+
+body .nl-content .login {
+  position: absolute;
+  top: 45px;
+  left: 1050px;
+  width: 330px;
+  height: 500px;
+  background-color: #fff;
+  padding-left: 0px;
+}
+
+body .nl-content .login h1 {
+  font-size: 26px;
+  color: #000;
+  padding-left: 20px;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 15px;
+}
+
+body .nl-content .login .box {
+  text-align: center;
+  padding: 20px;
+}
+
+body .nl-content .login .box p {
+  text-align: left;
+}
+
+body .nl-content .login .box input {
+  border: 1px solid #ccc;
+  width: 280px;
+  height: 50px;
+  margin: 5px;
+}
+
+body .nl-content .login .box .Verification {
+  line-height: 100px;
+  height: 100px;
+  position: relative;
+}
+
+body .nl-content .login .box .Verification #Verification {
+  width: 115px;
+  height: 50px;
+  text-align: left;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+}
+
+body .nl-content .login .box .Verification canvas {
+  margin-top: 15px;
+  float: right;
+}
+
+body .nl-content .login .box #submit {
+  background-color: red;
+  color: #fff;
+  font-size: 16px;
+}
+
+body .nl-content .login .box #registered {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #ddd;
+  font-size: 18px;
+}
+
+body .nl-footer {
+  width: 460px;
+  position: absolute;
+  top: 790px;
+  left: 50%;
+  text-align: center;
+  height: 120px;
+  color: #ccc;
+  font-size: 12px;
+  margin-left: -230px;
+}
+
+body .nl-footer .nl-f-nav {
+  margin-bottom: 10px;
+}
+
+body .nl-footer .nl-f-nav a {
+  font-size: 14px;
+  color: #ccc;
+}
+
+body .nl-footer .nl-f-copyright .nl_f_text {
+  margin-bottom: 10px;
+}

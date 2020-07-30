@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>音平商城登录页面</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/base_px.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/captcha.js"></script>
+    <script src="../js/login.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-logo">
+            <a href="https://www.ingping.com/">
+                <img src="https://passport.ingping.com/images/ingping-1.0.0.png">
+            </a>
+        </div>
+        <div class="login-msg error"
+            style="text-align: center;width: 800px;margin: 0 auto;margin-top: 12px;border: 1px solid;border-color: #ffb4a8;background: #fef2f2;line-height: 6px;padding: 6px 10px;overflow: hidden;color: #6C6C6C;">
+            <p class="error" style="float: none;width: auto;">
+                为确保您的账号安全及正常使用，依《网络安全法》相关要求，会员账号需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！
+            </p>
+        </div>
+        <div class="login-items" style="margin-top: 17px;margin-right: 47px;width:500px;height:35px;">
+            <ul>
+                <li>
+                    <a href="https://www.ingping.com/">
+                        <img src="https://passport.ingping.com/images/ingpingmall-1.0.0.png">
+                    </a>
+                    <span><img src="https://passport.ingping.com/images/xiegang-1.0.0.png"></span>
+                </li>
+                <li>
+                    <a href="https://zx.ingping.com/">
+                        <img src="https://passport.ingping.com/images/ingpingzixun-1.0.0.png">
+                    </a>
+                    <span><img src="https://passport.ingping.com/images/xiegang-1.0.0.png"></span>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://passport.ingping.com/images/yingshifu-1.0.0.png">
+                    </a>
+                    <span><img src="https://passport.ingping.com/images/xiegang-1.0.0.png"></span>
+                </li>
+                <li>
+                    <a href="http://www.ingping.cn/">
+                        <img src="https://passport.ingping.com/images/ingpinglexiang-1.0.0.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="nl-content">
+        <div class="login">
+            <h1>密码登录</h1>
+            <div class="box">
+                <div class="lis1">
+                    <div class="phone">
+                        <input type="text" id="phone" placeholder="请输入手机号码或者是用户名">
+                    </div>
+                    <div class="password">
+                        <input type="text" id="password" placeholder="请输入密码">
+                    </div>
+                    <div class="Verification">
+                        <input type="text" id="Verification">
+                        <canvas width="160" height="50" id="captcha1"></canvas>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="立即登录" id="submit">
+                    </div>
+                    <div class="registered">
+                        <input type="submit" value="立即注册音平账号" id="registered">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部信息 -->
+    <div class="nl-footer ">
+        <div class="item">
+            <div class="nl-f-nav">
+                <a href="https://www.ingping.com/help/detail/21/26" target="_blank">关于我们</a>
+                <em>|</em>
+                <a href="https://www.ingping.com/help/detail/22/26" target="_blank">联系我们</a>
+            </div>
+            <p class="nl-f-copyright">
+                <p class="nl_f_text">增值电信业务经营许可证：粤B2-20110237 | 粤ICP备11032710号-1</p><br>
+                © 2011-2020 音平公司版权所有<span class="nl_f_text">，并保留所有权利（著作权及商标声明）。</span>
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>

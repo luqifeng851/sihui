@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 750px) {
+    body #box .box .title{
+        font-size: 28px;
+        /* background-color: #58bc58; */
+    }
+  
+}
+#box{
+    width: 100%;
+    background-color: #f1f1f1;
+    padding-top:40px;
+    padding-bottom: 60px;
+}
+#box .box{
+    width: 59.4%;
+    /* height: 1380px; */
+    background-color: #fff;
+    margin:0 auto;
+    /* padding:60px 106px 29px 99px; */
+    min-width: 375px;
+    padding-top: 59px;
+    padding-bottom: 30px;
+}
+#box .box .title{
+    width: 77.83%;
+    margin:0 auto;
+    font-size:24px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+}
+#box .box .msg{
+    width: 77.83%;
+    margin:0 auto;
+    margin-top:25px;
+    margin-bottom: 42px;
+    height: 26px;
+}
+#box .box .msg .msg_one{
+    display: inline-block;
+    width:64px;
+    height:26px;
+    background:rgba(255,55,54,1);
+    border-radius:8px;
+    font-size:16px;
+    font-family:Microsoft YaHei;
+    font-weight:300;
+    color:rgba(255,255,255,1);
+    line-height:26px;
+    text-align: center;
+    margin-right: 12px;
+}
+#box .box .msg .msg_two{
+    font-size:16px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(101,101,101,1);
+    margin-right: 16px;
+}
+#box .box .news{
+    width: 77.83%;
+    margin:0 auto;
+    text-indent:2em;
+    font-size:20px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height: 35px;
+    margin-bottom: 40px;
+}
+#box .box .news_img{
+    width: 77.83%;
+    margin:0 auto;
+    height: 283px;
+    background-color: #58bc58;
+    margin-bottom: 33px;
+}
+#box .box .news_img img{
+    width: 100%;
+    height: 100%;
+}
+#box .box .lastAnNext{
+    width: 77.83%;
+    margin:0 auto;
+    margin-top:31px;
+    font-size:20px;
+    font-family:Microsoft YaHei;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    cursor: pointer;
+}
+#box .box .lastAnNext .lastOne{
+    margin-bottom: 6px;
+}
+#box .box .lastAnNext .lastOne span{
+    margin-right:40px;
+}
+#box .box .lastAnNext .nextOne span{
+    margin-right:40px;
+}
+#box .box .lastAnNext .lastOne:hover{
+    color:#336bb3
+}
+#box .box .lastAnNext .nextOne:hover{
+    color:#336bb3
+}

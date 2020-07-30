@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html,
+    body,
+    .box {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    .left {
+        width: 200px;
+        height: 100%;
+        background-color: rgb(253, 253, 161);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .mid {
+        /* width: 200px; */
+        height: 100%;
+        background-color: rgb(166, 233, 122);
+        position: absolute;
+        top: 0;
+        right: 200px;
+        left: 200px;
+    }
+
+    .right {
+        width: 200px;
+        height: 100%;
+        background-color: rgb(253, 253, 161);
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+</style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left">left</div>
+        <div class="mid">mid</div>
+        <div class="right">right</div>
+    </div>
+</body>
+
+</html>

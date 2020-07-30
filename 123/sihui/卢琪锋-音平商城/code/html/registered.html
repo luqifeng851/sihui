@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>音平商城注册</title>
+    <link rel="stylesheet" href="../css/registered.css">
+    <link rel="stylesheet" href="../css/base_px.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/captcha.js"></script>
+    <script src="../js/registered.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-logo">
+            <a href="https://www.ingping.com/">
+                <img src="https://passport.ingping.com/images/ingping-1.0.0.png">
+            </a>
+        </div>
+        <div class="login-items" style="margin-top: 17px;margin-right: 47px;width:500px;height:35px;">
+            <ul>
+                <li>
+                    <a href="https://www.ingping.com/">
+                        <img src="https://passport.ingping.com/images/ingpingmall-1.0.0.png">
+                    </a>
+                    <span><img src="https://passport.ingping.com/images/xiegang-1.0.0.png"></span>
+                </li>
+                <li>
+                    <a href="https://zx.ingping.com/">
+                        <img src="https://passport.ingping.com/images/ingpingzixun-1.0.0.png">
+                    </a>
+                    <span><img src="https://passport.ingping.com/images/xiegang-1.0.0.png"></span>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="https://passport.ingping.com/images/yingshifu-1.0.0.png">
+                    </a>
+                    <span><img src="https://passport.ingping.com/images/xiegang-1.0.0.png"></span>
+                </li>
+                <li>
+                    <a href="http://www.ingping.cn/">
+                        <img src="https://passport.ingping.com/images/ingpinglexiang-1.0.0.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="layout-a">
+        <h1>一个账号，玩转所有音平服务</h1>
+        <div class="regbox">
+            <div class="usename">
+                <label for="usename">用户名</label>
+                <input type="text" id="usename" placeholder="0-6位的字母数字下划线">
+                <p class="info"></p>
+            </div>
+            <div class="phone">
+                <label for="phone">手机号</label>
+                <input type="text" id="phone" placeholder="11位的手机号码">
+                <p class="info"></p>
+            </div>
+            <div class="password">
+                <label for="password">密码</label>
+                <input type="text" id="password" placeholder="6-12位的字母和数字组合">
+                <p class="info"></p>
+            </div>
+            <div class="Verification">
+                <label for="Verification">验证码</label>
+                <input type="text" id="Verification">
+                <canvas width="140" height="70" id="captcha1"></canvas>
+                <p class="info"></p>
+            </div>
+            <div class="submit">
+                <input type="submit" value="提交" id="submit">
+            </div>
+            <div class="login">
+                <input type="submit" value="已有账号，立即登录" id="login">
+            </div>
+        </div>
+    </div>
+    <!-- 底部信息 -->
+    <div class="nl-footer "></div>
+</body>
+
+</html>
